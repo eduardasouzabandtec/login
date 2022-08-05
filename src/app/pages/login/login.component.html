@@ -1,0 +1,42 @@
+<div class="login">
+  <section class="image">
+    <img src="../../../assets/img/work.svg" alt="">
+  </section>
+  <section class="content">
+    <div class="container">
+      <h1>{{ dataLogin.title }}</h1>
+      <p class="subtitle">
+        {{ dataLogin.subTitle}}
+      </p>
+      <form [formGroup]="formUser" (ngSubmit)="onSubmit()">
+        <div class="container_input">
+          <p class="description_input">Email</p>
+          <mat-form-field appearance="fill">
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+            <mat-error *ngIf="formErrorEmail">
+              {{ dataLogin.invalidEmail }}
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+
+        <div class="container_input">
+          <p class="description_input">Senha</p>
+          <mat-form-field appearance="fill">
+            <input matInput [type]="hideButton ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hideButton = !hideButton" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hideButton">
+              <mat-icon>{{hideButton ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="formErrorPassWord">
+              {{ dataLogin.requiredPassword }}
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" [disabled]="formErrorEmail || formErrorPassWord">Entrar</button>
+        </div>
+      </form>
+      <p>Ainda não tem conta ? <a> Cadastre-se </a></p>
+
+    </div>
+  </section>
+</div>

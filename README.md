@@ -1,4 +1,8 @@
-# WorkLogin
+# Login e Register
+![image](https://user-images.githubusercontent.com/53790644/183000948-85977590-3433-4c33-9c32-c7c944ae9c3f.png)
+![image](https://user-images.githubusercontent.com/53790644/183000990-f949128e-744c-4971-80b9-d0f7657882ce.png)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 

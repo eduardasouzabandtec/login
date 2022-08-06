@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Eduarda alves",
+      "email": "eduardaa9@gmail.com",
+      "gender": "Masculino",
+      "password": "123"
+    },
+    {
+      "id": 2
+    },
+    {
+      "fullName": "eduara dasd",
+      "email": "eduarda9@gmail.com",
+      "gender": "Feminino",
+      "password": "1111",
+      "id": 3
+    },
+    {
+      "fullName": "eduarda alves",
+      "email": "edu@gmail.com",
+      "gender": "Feminino",
+      "password": "1122",
+      "id": 4
+    },
+    {
+      "fullName": "eduara dasd",
+      "email": "eduardaa9@gmail.com",
+      "gender": "Masculino",
+      "password": "adasdas",
+      "id": 5
+    },
+    {
+      "fullName": "eduardaa9@gmail.com",
+      "email": "eduarda@gmail.com",
+      "gender": "Feminino",
+      "password": "asdas",
+      "id": 6
+    }
+  ]
+}

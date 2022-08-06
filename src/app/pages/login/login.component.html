@@ -1,4 +1,4 @@
-<div class="login">
+<div class="page">
   <section class="image">
     <img src="../../../assets/img/work.svg" alt="">
   </section>
@@ -34,8 +34,11 @@
           </mat-form-field>
           <button mat-raised-button color="primary" [disabled]="formErrorEmail || formErrorPassWord">Entrar</button>
         </div>
+        <mat-error *ngIf="showErrorInvalid">
+          {{ dataLogin.invalidUser }}
+        </mat-error>
       </form>
-      <p>Ainda não tem conta ? <a> Cadastre-se </a></p>
+      <p class="info-footer">Ainda não tem conta ? <a [routerLink]="['register']"> Cadastre-se </a></p>
 
     </div>
   </section>

@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C73EB;
+
+    .home_title {
+        margin-bottom: 30px;
+    }
+
+
+    .home_card {
+        width: 80%;
+        margin: 0 auto;
+        min-width: 300px;
+        max-width: 900px;
+
+        .container_info {
+            width: 60%;
+            margin: 0 auto;
+            
+            .info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #F5F5F5;
+
+                h3 {
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                font-weight: 500;
+                color: #2C73EB;
+            }
+
+            .sair {
+                margin-top: 20px;
+            }
+        }
+    }
+}

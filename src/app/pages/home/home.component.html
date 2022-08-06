@@ -1,0 +1,24 @@
+<section class="home">
+    <mat-card class="home_card">
+       
+        <section class="container_info">
+            <mat-card-title class="home_title">
+                Meus dados
+            </mat-card-title>
+            <div class="info">
+                <h3>Nome</h3>
+                <p> {{ dataUser?.fullName}}</p>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p> {{ dataUser?.email }}</p>
+            </div>
+            <div class="info">
+                <h3>Genero</h3>
+                <p> {{ dataUser?.gender }}</p>
+            </div>
+            <p class="sair"[routerLink]="['']">SAIR</p>
+        </section>
+    </mat-card>
+
+</section>

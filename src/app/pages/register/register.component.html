@@ -1,0 +1,67 @@
+<div class="page">
+    <section class="image">
+        <img src="../../../assets/img/work.svg" alt="">
+    </section>
+    <section class="content">
+        <div class="container">
+            <h1>{{ dataRegister.title }}</h1>
+            <p class="subtitle">
+                {{ dataRegister.subTitle}}
+            </p>
+            <form [formGroup]="formRegister" (ngSubmit)="onSubmit()">
+
+                <div class="container_input">
+                    <p class="description_input">Email</p>
+                    <mat-form-field appearance="fill">
+                        <input type="email" matInput  formControlName="email" placeholder="Ex. pat@example.com">
+                        <mat-error *ngIf="formErrorEmail">
+                            {{ dataRegister.invalidEmail }}
+                          </mat-error>
+                    </mat-form-field>
+
+                </div>
+
+                <div class="container_input">
+                    <p class="description_input">Nome</p>
+                    <mat-form-field appearance="fill">
+                        <input type="text" matInput formControlName="name" placeholder="Ex. Eduarda Alves">
+                        <mat-error *ngIf="formErrorName">
+                            {{ dataRegister.invalidName }}
+                        </mat-error>
+                    </mat-form-field>
+
+                </div>
+
+
+                <div class="container_input">
+                    <p class="description_input">Genero</p>
+                    <mat-form-field appearance="fill">
+                        <mat-select formControlName="gender" name="gender">
+                            <mat-option *ngFor="let gender of genders"  [value]="gender.viewValue">
+                                {{gender.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+
+                <div class="container_input">
+                    <p class="description_input">Senha</p>
+                    <mat-form-field appearance="fill">
+                        <input formControlName="password" matInput [type]="hideButton ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hideButton = !hideButton"
+                            [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideButton">
+                            <mat-icon>{{hideButton ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="formErrorPassword">
+                            {{ dataRegister.requiredPassword }}
+                        </mat-error>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary" [disabled]="formError">Entrar</button>
+                </div>
+            </form>
+            <p class="info-footer">ja possui conta ? <a [routerLink]="['']"> Login </a></p>
+
+        </div>
+    </section>
+</div>

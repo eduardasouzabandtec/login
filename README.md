@@ -1,6 +1,16 @@
 # Login e Register
-![image](https://user-images.githubusercontent.com/53790644/183000948-85977590-3433-4c33-9c32-c7c944ae9c3f.png)
-![image](https://user-images.githubusercontent.com/53790644/183000990-f949128e-744c-4971-80b9-d0f7657882ce.png)
+### Login
+![image](https://user-images.githubusercontent.com/53790644/183228881-8dfb34b2-831f-42f2-a5a8-d968841e1a8f.png)
+![image](https://user-images.githubusercontent.com/53790644/183228897-2233d70a-ad6a-4ace-b8b4-8cbf9bbf55bf.png)
+
+###Register
+![image](https://user-images.githubusercontent.com/53790644/183228917-6ae5a6cb-89e2-4733-a7a7-e55bf5d886b2.png)
+![image](https://user-images.githubusercontent.com/53790644/183228927-05d7f2a3-025d-4aeb-9c8d-ab658d6d76bf.png)
+
+###Home
+![image](https://user-images.githubusercontent.com/53790644/183228945-9a9d7f1c-6865-4e22-ab94-926ffebf2947.png)
+![image](https://user-images.githubusercontent.com/53790644/183228952-2663a1ec-d3dc-4398-925f-9a4ab90fcc08.png)
+
 
 
 
